@@ -1,0 +1,98 @@
+# view AndroidManifest.xml #generated:39
+-keep class com.crittercism.NotificationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.ii.mobile.alarm.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.ii.mobile.application.ApplicationContext { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.ii.mobile.block.ConfigureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.ii.mobile.block.blocker.BlockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.ii.mobile.block.proximity.ProximityService { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.ii.mobile.home.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.ii.mobile.monitor.UnitTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.ii.mobile.service.NotifyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.ii.mobile.soap.SoapProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.ii.mobile.tab.BreakActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.ii.mobile.tab.IMActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.ii.mobile.tab.OnBreakActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.ii.mobile.tab.TabNavigationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.ii.mobile.tab.TaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.ii.mobile.task.selfTask.SelfTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.ii.mobile.tickle.TickleService { <init>(...); }
+
+# onClick res/layout/current_task_view.xml #generated:190
+# onClick res/layout/current_task_view.xml #generated:202
+-keepclassmembers class * { *** createRoundTripTaskButtonClick(...); }
+
+# onClick res/layout/current_task_view.xml #generated:158
+# onClick res/layout/current_task_view.xml #generated:170
+-keepclassmembers class * { *** createTransportationTaskButtonClick(...); }
+
+# onClick res/layout/current_task_view.xml #generated:73
+-keepclassmembers class * { *** delayButtonClick(...); }
+
+# onClick res/layout/on_break.xml #generated:73
+-keepclassmembers class * { *** finishBreakButtonClick(...); }
+
+# onClick res/layout/take_break.xml #generated:74
+# onClick res/layout/take_break.xml #generated:85
+-keepclassmembers class * { *** lunchBreakButtonClick(...); }
+
+# onClick res/layout/on_break.xml #generated:21
+# onClick res/layout/take_break.xml #generated:27
+-keepclassmembers class * { *** playAudioButtonClick(...); }
+
+# onClick res/layout/current_task_view.xml #generated:222
+# onClick res/layout/current_task_view.xml #generated:233
+-keepclassmembers class * { *** resumeTaskButtonClick(...); }
+
+# onClick res/layout/take_break.xml #generated:105
+# onClick res/layout/take_break.xml #generated:116
+-keepclassmembers class * { *** shortBreakButtonClick(...); }
+
+# onClick res/layout/current_task_view.xml #generated:126
+# onClick res/layout/current_task_view.xml #generated:138
+-keepclassmembers class * { *** startTaskButtonClick(...); }
+
+# onClick res/layout/self_task.xml #generated:28
+-keepclassmembers class * { *** submitButtonClick(...); }
+
+# onClick res/layout/current_task_view.xml #generated:105
+-keepclassmembers class * { *** taskCompleteTaskButtonClick(...); }
+
+# onClick res/layout/unit_test_view.xml #generated:7
+-keepclassmembers class * { *** unitTestButtonClick(...); }
+
+# onClick res/layout/on_break.xml #generated:32
+# onClick res/layout/take_break.xml #generated:38
+-keepclassmembers class * { *** volumeButtonClick(...); }
+
