@@ -105,14 +105,14 @@
     <!-- <string name="default_platform">https://hrctest.crothall.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string> -->
 
     <bool name="isDemoVersion">false</bool>
-    <bool name="isProduction">false</bool>
+    <bool name="isProduction">true</bool>
     <bool name="wantCrashReport">true</bool>
-    <bool name="isTestVersion">true</bool>
+    <bool name="isTestVersion">false</bool>
     <bool name="wantMAM">false</bool>
 
     <string name="devId">542a6d6c466eda16ba000005</string>
     <string name="prodId">54295a1cbb9475602a000004</string>
     <string name="testId">5486dada466eda126f00000a</string>
-    <string name="crothall_version">4.2</string>
+    <string name="crothall_version">4.24</string>
 
 </resources>
