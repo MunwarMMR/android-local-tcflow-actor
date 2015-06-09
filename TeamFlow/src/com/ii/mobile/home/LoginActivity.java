@@ -1,8 +1,11 @@
 package com.ii.mobile.home;
 
+<<<<<<< HEAD
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 import java.util.GregorianCalendar;
 import java.util.regex.Pattern;
 
@@ -19,7 +22,10 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+<<<<<<< HEAD
 import android.os.AsyncTask;
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -37,7 +43,11 @@ import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
 import com.crittercism.app.Crittercism;
+<<<<<<< HEAD
 import com.ii.mobile.R;
+=======
+import com.ii.mobile.R; // same package // same package
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 import com.ii.mobile.alarm.Alarm;
 import com.ii.mobile.application.ApplicationContext;
 import com.ii.mobile.application.Shortcut;
@@ -367,9 +377,12 @@ public class LoginActivity extends Activity implements TextWatcher, OnEditorActi
 	protected void commonGUI() {
 		TextView versionView = (TextView) this.findViewById(R.id.version);
 		versionView.setText(getResources().getString(R.string.crothall_version));
+<<<<<<< HEAD
 		
 		new NetworkTask().execute();
 		
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 	}
 
 	public void createGUI() {
@@ -852,6 +865,7 @@ public class LoginActivity extends Activity implements TextWatcher, OnEditorActi
 		new DownloadStaticTask(this, this).execute();
 	}
 
+<<<<<<< HEAD
 	class NetworkTask extends AsyncTask<Void, Void, Boolean>{
 		
 		boolean isReachable = false;
@@ -904,4 +918,6 @@ public class LoginActivity extends Activity implements TextWatcher, OnEditorActi
 	}
 	
 
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 }

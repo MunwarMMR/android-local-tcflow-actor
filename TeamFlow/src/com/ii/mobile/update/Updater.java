@@ -53,6 +53,7 @@ public class Updater {
 		String[] components1 = v1.split("\\.");
 		// L.out("components1: " + components1.length + " " + components1[0]);
 		String[] components2 = v2.split("\\.");
+<<<<<<< HEAD
 		
 		
 		int length = Math.max(components1.length, components2.length);
@@ -65,12 +66,23 @@ public class Updater {
 			if(components2.length > i+1)
 				two = Integer.valueOf(components2[i]);
 			
+=======
+		int length = Math.min(components1.length, components2.length);
+		for (int i = 0; i < length; i++) {
+			Integer one = Integer.valueOf(components1[i]);
+			Integer two = Integer.valueOf(components2[i]);
+			// L.out("one: " + one);
+			// L.out("two: " + two);
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 			int result = Integer.valueOf(one.compareTo(two));
 			if (result != 0) {
 				return result;
 			}
 		}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 		return 0;
 	}
 
@@ -175,10 +187,15 @@ public class Updater {
 		String downloadURL;
 		if (isProduction)
 			downloadURL = resources.getString(R.string.production_download_url);
+<<<<<<< HEAD
 		else if (resources.getBoolean(R.bool.isCandidate))
 			downloadURL = resources.getString(R.string.candidate_download_url);
 		else
 			downloadURL = resources.getString(R.string.daily_download_url);
+=======
+		else
+			downloadURL = resources.getString(R.string.beta_download_url);
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 		return downloadURL;
 	}
 
@@ -196,7 +213,10 @@ public class Updater {
 			// + ".apk";
 			// notice the test flag! here kmf
 			final String appFile = resources.getString(R.string.app_file)
+<<<<<<< HEAD
 					+"."+newVersion.versionNumber
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 					+ ".apk";
 			String message = "An update is available from " + currentVersion.versionNumber + " to "
 					+ newVersion.versionNumber;
@@ -205,6 +225,7 @@ public class Updater {
 				message += "\nDescription: " + newVersion.versionComment;
 			message += "\nClick to update and install normally";
 			// activity.stopService(new Intent(activity, BlockService.class));
+<<<<<<< HEAD
 			
 			if (newVersion.versionRequired){
 				new AlertDialog.Builder(activity)
@@ -249,6 +270,38 @@ public class Updater {
 						})
 						.show();
 			}
+=======
+			new AlertDialog.Builder(activity)
+					.setIcon(R.drawable.icon)
+					.setTitle("Update Available")
+					.setMessage(message)
+					.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialog, int whichButton) {
+							/* User clicked OK so do some stuff */
+							// activity.stopService(new Intent(activity,
+							// BlockService.class));
+							L.out("downloading: " + downloadURL + appFile);
+							// L.sleep(5000);
+							new DownLoadAndInstall().execute(appFile);
+
+							// Intent intent = new Intent(Intent.ACTION_VIEW,
+							// Uri.parse(downloadURL + appFile));
+							// activity.startActivity(intent);
+
+						}
+					})
+					.setNegativeButton("No", new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialog, int whichButton) {
+							/* User clicked Cancel */
+							MyToast.show("Use the options menu to install later");
+							// activity.startService(new Intent(activity,
+							// BlockService.class));
+						}
+					})
+					.show();
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 		}
 	};
 

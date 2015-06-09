@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <!-- <string name="default_platform">https://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string> -->
     <string name="default_platform">https://hrctest.crothall.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+=======
+    <string name="default_platform">https://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+    <!-- <string name="default_platform">https://hrctest.crothall.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string> -->
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 
     <string-array name="username_array1">
         <item>kimp</item>
@@ -89,6 +94,7 @@
     <string name="log_in">Log In</string>
     <string name="log_out">Log Out</string>
     <string name="enter">Enter</string>
+<<<<<<< HEAD
     <string name="long_click_on_login">false</string>
     <string name="production_download_url">https://hrctest.crothall.com/m/</string>
     <string name="candidate_download_url">https://hrctest.crothall.com/m/t/</string>
@@ -101,6 +107,25 @@
     <bool name="isDemoVersion">false</bool>
     <bool name="isProduction">false</bool>
     <bool name="isCandidate">false</bool>
+=======
+    <!--  -->
+    <string name="long_click_on_login">false</string>
+    <string name="URLproduction_download_url">http://i-i3-build-vm.cloudapp.net/p/</string>
+    <!-- <string name="production_download_url">http://168.61.65.186/p/</string> -->
+    <!-- <string name="production_download_url">https://hrctest.crothall.com/m/</string> -->
+    <!-- <string name="production_download_url">https://hrctest.crothall.com/m/t/</string> -->
+    <!-- <string name="production_download_url">https://crothall-canada.com/hrc/</string> -->
+    <!-- <string name="beta_download_url">http://i-i3-build-vm.cloudapp.net/t/</string> -->
+    <string name="production_download_url">https://hrctest.crothall.com/m/</string>
+    <string name="beta_download_url">https://hrctest.crothall.com/m/t/</string>
+    <string name="crothall_comment">Not used Old comment</string>
+    <string name="app_file">actor</string>
+
+    <!-- <string name="default_platform">https://hrctest.crothall.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string> -->
+
+    <bool name="isDemoVersion">false</bool>
+    <bool name="isProduction">false</bool>
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
     <bool name="wantCrashReport">true</bool>
     <bool name="isTestVersion">true</bool>
     <bool name="wantMAM">false</bool>

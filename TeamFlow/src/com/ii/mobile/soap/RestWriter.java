@@ -243,8 +243,14 @@ public class RestWriter extends RestService {
 		String taskNumber = taskStatus.getTaskNumber();
 
 		if (taskNumber != null && !currentTaskNumber.equals(taskNumber)) {
+<<<<<<< HEAD
 			IMActivity.p("Unable to update status of " + currentTaskNumber + " have legacy task: "
 					+ taskNumber);
+=======
+			if (TabNavigationActivity.showToasts)
+				MyToast.show("Unable to update status of " + currentTaskNumber + " have legacy task: "
+						+ taskNumber);
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 			return false;
 		}
 		if (blocked)

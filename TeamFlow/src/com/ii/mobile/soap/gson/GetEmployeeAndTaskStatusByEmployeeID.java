@@ -1,5 +1,6 @@
 package com.ii.mobile.soap.gson;
 
+<<<<<<< HEAD
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -7,6 +8,11 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+=======
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 import com.google.gson.JsonParser;
 import com.google.gson.annotations.SerializedName;
 import com.ii.mobile.soap.BaseSoap;
@@ -156,6 +162,7 @@ public class GetEmployeeAndTaskStatusByEmployeeID extends GJon {
 		Gson gson = gsonBuilder.create();
 		JsonParser parser = new JsonParser();
 		GJon gJon = null;
+<<<<<<< HEAD
 		
 		try {
 			JSONObject jsonObject = new JSONObject(json);
@@ -182,6 +189,8 @@ public class GetEmployeeAndTaskStatusByEmployeeID extends GJon {
 			e1.printStackTrace();
 		}
 		
+=======
+>>>>>>> 26fe81448f9b13a55150e4f6c6f2ccca714ad58b
 		try {
 			gJon = (GJon) gson.fromJson(parser.parse(json).getAsJsonObject().toString(), className);
 		} catch (Exception e) {
