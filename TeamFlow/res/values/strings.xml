@@ -100,7 +100,7 @@
     <string name="candidate_download_url">https://hrctest.crothall.com/m/t/</string>
     <string name="daily_download_url">https://hrctest.crothall.com/m/d/</string>
     <string name="crothall_comment">Not used Old comment</string>
-    <!-- <string name="app_file">actor</string> -->
+    <!-- <string name="app_file">Throughput</string> -->
 
     <string name="app_file">throughput</string>
 
