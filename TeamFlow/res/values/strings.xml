@@ -63,8 +63,8 @@
 
     <bool name="use_dev_settings">true</bool>
 
-    <string name="app_url_dev">https://198.84.29.22/crothall_mobile/php/Crothall.html</string>
-    <string name="im_server_dev">198.84.29.21</string>
+    <string name="app_url_dev">https://198.84.4.89.22/crothall_mobile/php/Crothall.html</string>
+    <string name="im_server_dev">198.84.4.89.21</string>
     <string name="im_server_private_dev">172.17.199.21</string>
 
     <bool name="reload_each_launch">false</bool>
@@ -108,6 +108,6 @@
     <string name="devId">542a6d6c466eda16ba000005</string>
     <string name="prodId">54295a1cbb9475602a000004</string>
     <string name="testId">5486dada466eda126f00000a</string>
-    <string name="crothall_version">4.2</string>
+    <string name="crothall_version">4.4.8</string>
 
 </resources>
